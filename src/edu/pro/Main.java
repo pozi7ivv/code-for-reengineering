@@ -25,10 +25,8 @@ public class Main {
 
       // min salary
         List<Integer> salaries = new ArrayList<>();
-        salaries.add(john.getSalary());
-        salaries.add(paul.getSalary());
-        salaries.add(george.getRate() * george.getHours());
-        salaries.add(ringo.getRate() * ringo.getHours());
+        salaries.add(john.getSalary());  salaries.add(paul.getSalary());
+        salaries.add(george.getRate() * george.getHours());  salaries.add(ringo.getRate() * ringo.getHours());
         salaries.sort(Comparator.comparingInt(Integer::intValue));
         int min = salaries.get(0);
 
