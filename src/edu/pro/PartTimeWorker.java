@@ -7,10 +7,9 @@ package edu.pro;
   @since 06.12.22 - 15.50
 */
 
-public class PartTimeWorker {
-    private String name;
-    private  int rate;
-    private  int hours;
+public class PartTimeWorker extends Worker {
+    private int rate;
+    private int hours;
 
     public PartTimeWorker(String name, int rate, int hours) {
         this.name = name;
@@ -18,30 +17,19 @@ public class PartTimeWorker {
         this.hours = hours;
     }
 
-    public PartTimeWorker() {
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getRate() {
-        return rate;
-    }
-
     public void setRate(int rate) {
         this.rate = rate;
     }
 
-    public int getHours() {
-        return hours;
-    }
-
     public void setHours(int hours) {
         this.hours = hours;
+    }
+
+    public int getRate() {
+        return this.rate;
+    }
+
+    public int getHours() {
+        return this.hours;
     }
 }
